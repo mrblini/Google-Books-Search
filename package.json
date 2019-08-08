@@ -17,5 +17,11 @@
   "bugs": {
     "url": "https://github.com/pablodiazt/Google-Books-Search/issues"
   },
-  "homepage": "https://github.com/pablodiazt/Google-Books-Search#readme"
+  "homepage": "https://github.com/pablodiazt/Google-Books-Search#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.6.8",
+    "nodemon": "^1.19.1"
+  },
+  "devDependencies": {}
 }
