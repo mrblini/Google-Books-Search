@@ -1,28 +1,53 @@
 import React from "react";
+import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Books from "./pages/Books";
 import Detail from "./pages/Detail";
 import NoMatch from "./pages/NoMatch";
 import Nav from "./components/Nav";
-// import React, { Component } from "react";
-// import "./App.css";
-// import axios from 'axios';
 
+import DeletePage from "./pages/DeletePage";
+import Test from "./components/TestDelete";
+import Intro from "./components/IntroUser";
+
+import axios from 'axios';
+
+console.log("inside app js");
 function App() {
-  return (
-    <Router>
-      <div>
-        <Nav />
-        <Switch>
-          <Route exact path="/" component={Books} />
-          <Route exact path="/books" component={Books} />
-          <Route exact path="/books/:id" component={Detail} />
-          <Route component={NoMatch} />
-        </Switch>
-      </div>
-    </Router>
-  );
+    return (
+        <Router>
+            <div>
+                <Test />
+                <Intro />
+                <Switch>
+                    <Route exact path="/" component={DeletePage} />
+                    <Route exact path="/intro" component={Intro} />
+                </Switch>
+            </div>
+            
+        </Router>
+    );
 }
+
+// function App() {
+//   return (
+//     <Router>
+//       <div>
+//         <Nav />
+//         <Switch>
+//           <Route exact path="/" component={Test} />
+//           {/* <Route exact path="/" component={Books} /> */}
+//           <Route exact path="/books" component={Books} />
+//           <Route exact path="/books/:id" component={Detail} />
+//           <Route component={NoMatch} />
+//         </Switch>
+//       </div>
+//     </Router>
+//   );
+// }
+
+export default App;
+
 
 // class App extends Component {
 //   constructor(props) {
@@ -51,5 +76,3 @@ function App() {
 //     );
 //   }
 // }
-
-export default App;
