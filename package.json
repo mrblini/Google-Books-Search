@@ -4,14 +4,8 @@
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
   "main": "server.js",
   "scripts": {
-    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
-    "start:prod": "node server.js",
-    "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
-    "client": "cd client && npm run start",
-    "seed": "node scripts/seedDB.js",
-    "install": "cd client && npm install",
-    "build": "cd client && npm run build",
-    "heroku-postbuild": "npm run build"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -26,11 +20,8 @@
   "homepage": "https://github.com/pablodiazt/Google-Books-Search#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "if-env": "^1.0.4",
     "mongoose": "^5.6.8",
     "nodemon": "^1.19.1"
   },
-  "devDependencies": {
-    "concurrently": "^4.1.1"
-  }
+  "devDependencies": {}
 }
