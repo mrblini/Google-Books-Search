@@ -20,7 +20,7 @@
   "homepage": "https://github.com/pablodiazt/Google-Books-Search#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "mongoose": "^5.6.8",
+    "mongoose": "^5.7.5",
     "nodemon": "^1.19.1"
   },
   "devDependencies": {}
